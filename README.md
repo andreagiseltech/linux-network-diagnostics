@@ -1,4 +1,26 @@
 # linux-network-diagnostics
+
+# Laboratorio: Despliegue de Red Mesh Privada (VPN) y Securizacion Perimetral
+
+- **Objetivo:** Implemetar administración remota persistente sobre un servidor Linux optimizado (2GB RAM) sin exponer puertos criticos a la intenet pública.
+- **Herramientas utilizadas:** Tailscale (WireGuard), UFW (Uncomplicated Firewall), SSH (Key-based authentication).
+- **Logros Técnicos:** 
+  - Configuración y securización del servicio SSH mediante llaves criptográficas, deshabilitando el acceso por contraseña.
+  - Implementación de las reglas perimetrales estrictas con UFW para denegartodo el tráfico entrante por defecto, aislando el host.
+  - Creación de un túnel privado encriptado de nivel militar mediante una topología Mesh (Tailscale), asignando una IP global fija dentro del rango '100.X.X.X'.
+  - Validación y auditoría exitosa del canal de comunicación realizando conexiones cifradas desde redes externas móviles (4G/5G) hacia el entorno local.
+
+## Scripts de Auditoría y Monítoreo (Bash)
+
+### 1. Cazador de Procesos ('cazador.sh')
+Automatización para el monítoreo y caza de procesos de alta carga que pueden comprometer la performance o seguridad del sistema.
+[ver demo] (https://asciinema.org/a/1258565)
+
+### 2. Rastreador de conexiones ('rastreador.sh')
+Script diseñado para auditar conexiones de red activas, sockets abiertos y procedencia de IPs entrantes.
+[ver demo] (https://asciinema.org/a/1258566)   
+
+
 Linux file management and network diagnostics demo
 Objetivo
 Demostrar habilidades prácticas en Linux orientadas a gestión de archivos y diagnóstico de red, utilizando herramientas reales en entorno de terminal.
