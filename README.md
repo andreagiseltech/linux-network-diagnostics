@@ -21,6 +21,9 @@ Script diseñado para auditar conexiones de red activas, sockets abiertos y proc
 [ver demo] (https://asciinema.org/a/1258566)   
 
 
+
+
+
 Linux file management and network diagnostics demo
 Objetivo
 Demostrar habilidades prácticas en Linux orientadas a gestión de archivos y diagnóstico de red, utilizando herramientas reales en entorno de terminal.
